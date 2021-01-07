@@ -22,3 +22,11 @@ let markHigherBMI = bmiMark > bmiJohn
 
 console.log(bmiMark, bmiJohn);
 console.log(markHigherBMI);
+
+// Coding Challenge 2
+
+if (markHigherBMI === true) {
+    console.log("Marks BMI is higher than Johns");
+} else {
+    console.log("Johns BMI is higher than Marks");
+}

@@ -32,14 +32,29 @@
 // }
 
 // // Challenge 3 
-var dolphinsScore = (96 + 108 + 89) / 3; 
-var koalasScore = (88 + 91 + 120) /3;
+// var dolphinsScore = (96 + 108 + 89) / 3; 
+// var koalasScore = (88 + 91 + 120) /3;
 
-if (dolphinsScore >= koalasScore) {
+// if (dolphinsScore > koalasScore) {
+//     console.log("Dolphins Win!");
+// } else if (dolphinsScore > koalasScore) {
+//     console.log("Koalas Win!");
+// } else {
+//     console.log("Its a tie!");
+// }
+
+// Bonus 1
+var dolphinsScore = (97 + 112 + 101) / 3; 
+var koalasScore = (109 + 95 + 123) /3;
+
+if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
     console.log("Dolphins Win!");
-} else {
+} else if (dolphinsScore < koalasScore && koalasScore >= 100) {
     console.log("Koalas Win!");
+} else {
+    console.log("Its a tie!");
 }
+
 
 
 

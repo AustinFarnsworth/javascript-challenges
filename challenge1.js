@@ -44,16 +44,28 @@
 // }
 
 // Bonus 1
-var dolphinsScore = (97 + 112 + 101) / 3; 
-var koalasScore = (109 + 95 + 123) /3;
+// var dolphinsScore = (97 + 112 + 101) / 3; 
+// var koalasScore = (109 + 95 + 123) /3;
 
-if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
-    console.log("Dolphins Win!");
-} else if (dolphinsScore < koalasScore && koalasScore >= 100) {
-    console.log("Koalas Win!");
-} else {
-    console.log("Its a tie!");
-}
+
+
+
+// var day = "thursday" 
+// if (day === "monday") {
+//     console.log("Plan course structure");
+// } else if (day === "tuesday") {
+//     console.log("Something else");
+// } else if (day === "wednesday" || day === "thursday") {
+//     console.log("Write code examples");
+// }
+
+// Challenge 4
+const  bill = "40"
+
+const tipCalculation = bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+
+console.log(`Your bill was ${bill}, the tip was ${tipCalculation},
+and your total value is ${bill + tipCalculation}`);
 
 
 

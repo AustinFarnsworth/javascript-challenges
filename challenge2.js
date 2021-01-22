@@ -69,14 +69,35 @@ const johnSmith = {
 }
 // console.log(johnSmith.calcBMI());
 
-markMiller.calcBMI();
-johnSmith.calcBMI();
-console.log(markMiller.bmi, johnSmith.bmi);
+// markMiller.calcBMI();
+// johnSmith.calcBMI();
+// console.log(markMiller.bmi, johnSmith.bmi);
 
-if (markMiller.bmi > johnSmith.bmi) {
-    console.log(`Marks BMI ${markMiller.bmi} is higher than Johns BMI ${johnSmith.bmi}`);
-} else if (johnSmith.bmi > markMiller.bmi) {
-    console.log(`Johns BMI ${johnSmith.bmi} is higher than Marks BMI ${markMiller.bmi}`);
-} else {
-    console.log('They have the same BMi');
+// if (markMiller.bmi > johnSmith.bmi) {
+//     console.log(`Marks BMI ${markMiller.bmi} is higher than Johns BMI ${johnSmith.bmi}`);
+// } else if (johnSmith.bmi > markMiller.bmi) {
+//     console.log(`Johns BMI ${johnSmith.bmi} is higher than Marks BMI ${markMiller.bmi}`);
+// } else {
+//     console.log('They have the same BMi');
+// }
+
+// challenge 4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const tips = []
+const totals = []
+
+const calcTip = function (bills) {
+  return bills >= 50 && bills <= 300 ? bills * .15 : bills * .2;
 }
+
+
+for (i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+
+}
+
+
+console.log(bills, tips, totals);
